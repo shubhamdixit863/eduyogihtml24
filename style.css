@@ -1,0 +1,13 @@
+#heading{
+    color: blueviolet;
+    border: 1px solid brown;
+}
+
+.heading{
+    color: green;
+    border: 1px solid grey;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

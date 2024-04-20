@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            background-color: salmon;
+            text-align: center;
+        }
+        #menu{
+            list-style-type: none;
+       
+        }
+        /* child combinator selector*/
+        #menu>li{
+            display: inline-block;
+            padding: 10px;
+
+        }
+
+        #menu>li>a{
+          text-decoration:none;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size:x-large;
+
+        }
+
+        .picture_Section{
+            width: 400px;
+            height: 400px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <ul id="menu">
+            <li>
+                <a href="">
+                    About Us
+                </a>
+            
+            </li>
+
+            <li>
+                <a href="">
+                   Home
+                </a>
+            
+            </li>
+
+            <li>
+                <a href="">
+                    Contact Us
+                </a>
+            
+            </li>
+
+            <li>
+                <a href="">
+                     Blog
+                </a>
+            
+            </li>
+            <li>
+                <a href="">
+                    Carrers
+                </a>
+            
+            </li>
+
+        </ul>
+
+    </header>
+
+<div style="text-align: center;">
+
+    <section class="picture_Section">
+        <!--Cat image-->
+
+        <img width="100%" height="100%" src="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" >
+    </section>
+
+    <section class="picture_Section">
+        <!--Dog image-->
+        <img width="100%" height="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Rc1qIIOJ3SnMx1JOTCLwVMzaoUWMLbD3I5rHv24SMQ&s" alt="" srcset="">
+    </section>
+</div>
+    
+</body>
+</html>

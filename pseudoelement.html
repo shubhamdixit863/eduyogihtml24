@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        p::before{
+            content: "HEy there this is lorem ipsum";
+        }
+        p::after{
+            content: "this is the finish line";
+        }
+
+        p::first-line{
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        #heading::first-letter{
+            color: brown;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        p::selection{
+            background-color: cadetblue;
+        }
+        input::grammar-error{
+            text-decoration:  underline solid orange;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        Lorem ipsum dolor sitrr amet consectetur adipisicing elit. Delectus qui laudantium consequatur ipsam, quos tempora provident unde soluta sunt dolorem, ab quibusdam quisquam! Modi explicabo reiciendis eum suscipit et cum.
+    </p>
+
+    <h1 id="heading">HEllo India</h1>
+
+    <input type="text">
+    
+</body>
+</html>
