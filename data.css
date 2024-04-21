@@ -1,0 +1,15 @@
+#mydiv{
+    background-color: beige;
+    height: 200px;
+}
+
+
+.myclass{
+    background-color: aqua;
+    height: 200px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
