@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 300px;
+            background-color: grey;
+            position: relative;
+            height: 2000vh;
+        }
+
+        .child-1{
+          /*  position: relative;similar to position static but you can apply top bootom left right*/
+           position: sticky;
+           /*behaves as position relative till the height of element
+           after that it starts behaving as position fixed
+           */
+         /* position: fixed;*/
+          /*when ever you are using position absolute 
+          the width of the element depends on the content 
+           if there is no content element wont be visible 
+          element gets removed completely from the document flow 
+          */
+          
+          /* position:absolute; position absolute considers its reference point by default from
+          the  html tag
+          */
+          top:40px;
+          left: 440px;
+        height: 100px;
+         
+            background-color: palevioletred;
+        }
+
+        .child-2{
+            height: 100px;
+            background-color: cadetblue;
+        }
+
+        .child-3{
+            height: 80px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child-1">
+       Child 1
+        </div>
+        <div class="child-2">
+         Child 2
+        </div>
+        <div class="child-3">
+         child-3
+        </div>
+
+    </div>
+    
+</body>
+</html>
