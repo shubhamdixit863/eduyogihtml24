@@ -18,7 +18,7 @@ services:
     restart: always
     ports:
       - "6379:6379"
-    command: redis-server --requirepass password --aclfile /etc/redis/users.acl    
+    command: redis-server  --aclfile /etc/redis/users.acl    
     volumes:
       - ./users.acl:/etc/redis/users.acl
 

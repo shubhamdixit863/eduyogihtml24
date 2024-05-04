@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex-container{
+            display: flex;
+            justify-content:baseline ;  /*center 
+            flex-end space-around 
+            space-evenly
+            space-between 
+            flex-start*/
+
+            flex-wrap: wrap-reverse;
+
+            align-items:baseline;
+            flex-direction: column;
+            flex-direction: row;
+            /*center
+            stretch
+            flex-end
+            flex-start
+            baseline
+            */
+            
+          
+            border: 1px solid black;
+            height: 400px;
+
+            /*
+            order has these values
+            0 ,1 ,2 -1 ,-2
+            By default order has 0 value
+
+            right most element has the highest order
+            left most content has the lowest order
+
+            */
+        }
+        .flex-item{
+            width: 150px;
+
+            
+        }
+        .item-1{
+
+         background-color: gold;
+        /* align-self: center;*/
+        }
+        .item-2{
+
+background-color: firebrick;
+}
+.item-3{
+
+background-color: forestgreen;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item item-1">
+          A
+        </div>
+
+        <div class="flex-item item-2">
+        S
+        </div>
+
+        <div class="flex-item item-3">
+       B
+        </div>
+
+        <div class="flex-item item-3">
+            B
+             </div>
+             <div class="flex-item item-2">
+                S
+                </div>
+                <div class="flex-item item-3">
+                    B
+                     </div>
+                     <div class="flex-item item-1">
+                        A
+                      </div>
+             
+
+    </div>
+    
+</body>
+</html>
