@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            background-color: honeydew;
+        }
+
+        .container .item{
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            
+          
+        }
+
+        @media screen and (max-width:400px) {
+            .container{
+                flex-wrap: wrap;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">
+        Home
+
+    </div>
+    <div class="item">
+      About Us
+    </div>
+    <div class="item">
+        Blog
+
+    </div>
+    <div class="item">
+        Careers
+
+    </div>
+
+</div>
+    
+</body>
+</html>
