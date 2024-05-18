@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .moved-element{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            transition: transform 2s ease;
+          
+        }
+        .moved-element:hover{
+            transform: translateX(30px);
+        }
+
+        @keyframes animationName {
+            0%{
+                /*all the css properties*/
+            }
+            100%{
+                /*all the css properteis*/
+            }
+            
+        }
+
+        .bouncing-element{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation:bounce 2s infinite
+        }
+
+        @keyframes bounce {
+            0%{
+                transform: translateY(-30px);
+                background-color: gold;
+            }
+            
+            50%{
+                transform: translateY(200px);
+                background-color: pink;
+            }
+            100%{
+                transform: translateY();
+                background-color: green;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <!--
+ <div class="moved-element">
+        I am moved
+
+    </div>
+
+    -->
+   
+    <div class="bouncing-element">
+
+    </div>
+    
+</body>
+</html>
