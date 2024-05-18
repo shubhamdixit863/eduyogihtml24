@@ -49,6 +49,34 @@
             }
             
         }
+
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            position:absolute;
+            left: 60px;
+            top: 50px;
+            animation: slideIn 3s forwards infinite;
+
+
+        }
+
+        @keyframes slideIn {
+            0%{
+                left :60px
+            }
+
+            50%{
+                left: 120px;
+                background-color: khaki;
+            }
+            100%{
+                left: 65px;
+            }
+            
+        }
         
     </style>
 </head>
@@ -62,6 +90,10 @@
     -->
    
     <div class="bouncing-element">
+
+    </div>
+
+    <div class="ball">
 
     </div>
     
