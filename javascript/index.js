@@ -65,3 +65,45 @@ console.log(si);
 
 /// You have to write a function that returns the sum of 5 numbers 
 // you have to take those 5 numbers from parameters
+
+function sumof5numbers(num1 ,num2,num3,num4,num5){
+    let sum=num1+num2+num3+num4+num5;
+
+    return sum;
+
+}
+
+let data=sumof5numbers(2,3,4,7,9);
+console.log(data);
+
+
+// --- operators in javascript
+// Arithmetic operators
+
+// Addition - + ,Subtraction - ,multiplication * ,divsion / ,modulus %
+function arithmetic(a ,b){
+    let sum=a+b;
+    let subtraction=a-b;
+    let multiply=a*b;
+    let division=a/b;  // quotient
+    let modulus=a%b;   // remainder
+    console.log("sum",sum);
+    console.log("subtract",subtraction);
+    console.log("multiply",multiply);
+    console.log("division",division);
+    console.log("modulus",modulus);
+
+}
+arithmetic(10,3);
+
+// Assignment operator
+let c=9;  // = -->assignment operator
+c+=9; // assignment plsu addition operator ----> c=c+9;
+c-=9;
+c*=9;
+c/=9;
+console.log(c);
+// Comparison operator
+
+// Logical Operators
+// Ternary operators
