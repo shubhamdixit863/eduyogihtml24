@@ -107,3 +107,14 @@ console.log(c);
 
 // Logical Operators
 // Ternary operators
+
+// You have to create the function to calculate the compound interest
+/**
+ * A	=	final amount
+P	=	initial principal balance
+r	=	interest rate
+n	=	number of times interest applied per time period
+t	=	number of time periods elapsed
+ */
+
+console.log(3**3) // ** --->power operator
