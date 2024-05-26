@@ -35,7 +35,7 @@ let principal=1000;
 const time =3;
 let roi=10;
 let interest=(principal*roi*time/100)
-console.log("result",interest);
+//console.log("result",interest);
 
 
 
@@ -55,7 +55,7 @@ function calculateSimpleInterest(principal,time,roi){  // parameters passed here
 
 // this is function call
 let si=calculateSimpleInterest(1000,2,9);  // arguments
-console.log(si);
+//console.log(si);
 // calculateSimpleInterest(2000,10,7);
 // calculateSimpleInterest(8000,12,8);
 
@@ -74,7 +74,7 @@ function sumof5numbers(num1 ,num2,num3,num4,num5){
 }
 
 let data=sumof5numbers(2,3,4,7,9);
-console.log(data);
+//console.log(data);
 
 
 // --- operators in javascript
@@ -94,7 +94,7 @@ function arithmetic(a ,b){
     console.log("modulus",modulus);
 
 }
-arithmetic(10,3);
+//arithmetic(10,3);
 
 // Assignment operator
 let c=9;  // = -->assignment operator
@@ -102,11 +102,33 @@ c+=9; // assignment plsu addition operator ----> c=c+9;
 c-=9;
 c*=9;
 c/=9;
-console.log(c);
+//console.log(c);
 // Comparison operator
+// they are used to compare two variables and they always return boolean value
+// ==
+// console.log(3==3); // true
+// console.log("3"==3); // true
+// === ,it checks the value as well as type
+// console.log("3"===3); //false
+
+// // >=
+// console.log(7>=5); //true
+// console.log(7>=7); // true
+// console.log(7>7);// false
+// console.log(7<7); //false
+// console.log(7<=7); // true
 
 // Logical Operators
-// Ternary operators
+
+// && || booolean they are used to evaluate the boolean values
+
+console.log(7>5 && 6<8);
+
+console.log(7>5 || 6<8);
+
+console.log(7>5 && 6>8); // true will be returned
+
+
 
 // You have to create the function to calculate the compound interest
 /**
@@ -117,4 +139,89 @@ n	=	number of times interest applied per time period
 t	=	number of time periods elapsed
  */
 
-console.log(3**3) // ** --->power operator
+//console.log(3**3) // ** --->power operator
+
+
+// conditionals
+
+// if ,else ,elseif
+
+// if(booleanvalue){
+
+// }
+
+if(7>61){
+    console.log("I will run");
+}
+else if(7>4){
+   console.log(" i will run when the if condition doesnt work")
+}
+// it will always run at the end --->
+else{
+    console.log("if all the if and else if conditions donot run ,then i will be running")
+}
+
+
+// fizz buzz problem ---> if the number is divisible by 3 so you have to print fizz
+// if its disvisble by 5 --->you have to print buzz
+// if its divsible by both 3 and 5 so you have to print fizzbuz
+
+// function Fizzbuzz(num){
+//    if (num%3==0 && num%5==0){
+//     console.log("fizzbuzz");
+//    }else if (num%3==0){
+//     console.log("fizz")
+
+//    }else if(num%5==0){
+//     console.log("buzz");
+
+//    }else{
+//     console.log("no match")
+//    }
+
+
+
+// }
+
+// Fizzbuzz(10);
+
+
+
+
+// Check if the number is even or odd 
+// write a function that checks whether the number is even or odd
+
+// function  evenOrODd(num){
+//    if (num%2==0){
+//     console.log("its even");
+//    }else{
+//     console.log("its odd");
+//    }
+// }
+// evenOrODd(90)
+
+
+// Loops  
+// loops are used to repeat the process ,multiple times
+//for loop
+
+for(let i=0;i<30;i=i+1){
+    console.log(" I would be repeated 30 times")
+    // all the code that you want to repeat will go here
+}
+
+// initilization happens first (it happens only once in the starting of the loop)--->
+// ----->checking condition (i<30)---->executes code inside the curly brackets---->increment-->check
+// ----->condition check--->code execution---->increment
+
+// Print out all odd numbers between 1 and 100
+function evenodd(){
+    for (let i=1;i<=100;i++){
+       if (i%2!=0){
+        console.log(i);
+       }
+
+    }
+}
+
+evenodd()
