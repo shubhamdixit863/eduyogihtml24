@@ -122,11 +122,11 @@ c/=9;
 
 // && || booolean they are used to evaluate the boolean values
 
-console.log(7>5 && 6<8);
+// console.log(7>5 && 6<8);
 
-console.log(7>5 || 6<8);
+// console.log(7>5 || 6<8);
 
-console.log(7>5 && 6>8); // true will be returned
+// console.log(7>5 && 6>8); // true will be returned
 
 
 
@@ -150,16 +150,16 @@ t	=	number of time periods elapsed
 
 // }
 
-if(7>61){
-    console.log("I will run");
-}
-else if(7>4){
-   console.log(" i will run when the if condition doesnt work")
-}
-// it will always run at the end --->
-else{
-    console.log("if all the if and else if conditions donot run ,then i will be running")
-}
+// if(7>61){
+//     console.log("I will run");
+// }
+// else if(7>4){
+//    console.log(" i will run when the if condition doesnt work")
+// }
+// // it will always run at the end --->
+// else{
+//     console.log("if all the if and else if conditions donot run ,then i will be running")
+// }
 
 
 // fizz buzz problem ---> if the number is divisible by 3 so you have to print fizz
@@ -205,23 +205,57 @@ else{
 // loops are used to repeat the process ,multiple times
 //for loop
 
-for(let i=0;i<30;i=i+1){
-    console.log(" I would be repeated 30 times")
-    // all the code that you want to repeat will go here
-}
+// for(let i=0;i<30;i=i+1){
+//     console.log(" I would be repeated 30 times")
+//     // all the code that you want to repeat will go here
+// }
 
-// initilization happens first (it happens only once in the starting of the loop)--->
-// ----->checking condition (i<30)---->executes code inside the curly brackets---->increment-->check
-// ----->condition check--->code execution---->increment
+// // initilization happens first (it happens only once in the starting of the loop)--->
+// // ----->checking condition (i<30)---->executes code inside the curly brackets---->increment-->check
+// // ----->condition check--->code execution---->increment
 
-// Print out all odd numbers between 1 and 100
-function evenodd(){
-    for (let i=1;i<=100;i++){
-       if (i%2!=0){
-        console.log(i);
-       }
+// // Print out all odd numbers between 1 and 100
+// function evenodd(){
+//     for (let i=1;i<=100;i++){
+//        if (i%2!=0){
+//         console.log(i);
+//        }
+
+//     }
+// }
+
+//evenodd()
+
+// while loop ---->
+
+// for (let i=0;i<30;i=i+1){// i =i+1 --->i++
+
+// } 
+//  let j=0;
+// while(j<0){
+//      console.log("I will never be executed")
+//     j=i+1
+// }
+// let i=0;
+// do{
+//     console.log("hello there")
+//     i++;
+// }
+
+// while(i<0)
+
+
+ // Reverse a number 908 --->809
+ 
+ function reverseANumber(num){
+    let rev=0;
+    while(num>0){
+        reminder=num%10;
+        rev=rev*10+reminder;
+        num=Math.floor(num/10)
 
     }
-}
+return rev
+ }
 
-evenodd()
+ console.log(reverseANumber(890));
