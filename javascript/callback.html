@@ -55,6 +55,16 @@ Greet("Shilpa",saygoodBye)
 // Function Calculate simple interest ,simple interest formula should be inside callback
 // and print out the simple interest
 
+function CalculateSi(p,r,t,fn){
+    let si=(p*r*t)/100
+    fn(si);
+   
+}
+
+CalculateSi(1000,2,10,function(si){
+   console.log(si);
+})
+
         </script>
     
 </body>

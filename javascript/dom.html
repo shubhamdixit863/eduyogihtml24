@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading">Hello World</h1>
+
+    <button id="btn">
+        Click
+    </button>
+    
+    <script>
+
+        let btn=document.getElementById("btn");
+        let heading=document.getElementById("heading");
+        btn.addEventListener("click",function(){
+            heading.style.color="green";
+
+        })
+
+        // You have to calculate the sum and product of first 100 numbers using callback
+
+        function Loop(sum,product){
+            let sum_=0;
+            let product_=1;
+            for(let i=1;i<200;i++)
+            {
+                sum_=sum_+i;
+                product_=product_*i;
+             
+            }
+            product(sum_);
+                sum(product_);
+
+        }
+        Loop(function(sum){
+            console.log(sum);
+
+        },function(product){
+            console.log(product)
+
+        })
+    </script>
+</body>
+</html>
