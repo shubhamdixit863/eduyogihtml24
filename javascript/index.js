@@ -259,3 +259,78 @@ return rev
  }
 
  console.log(reverseANumber(890));
+
+ //https://github.com/shubhamdixit863/eduyogihtml24.git
+
+ /**
+  * If we list all the natural numbers below 
+ that are multiples of 
+ or 
+, we get 
+ and 
+. The sum of these multiples is 
+.
+
+Find the sum of all the multiples of 
+ or 
+ below 1000
+  */
+
+//  function sumOfMultiples(){
+//     let sum=0;
+//    for (i=1;i<1000;i++){
+//     if (i%3==0 || i%5==0){
+//         sum=sum+i
+//     }
+
+//    }
+// return sum;
+
+//  }
+
+//  console.log(sumOfMultiples())
+
+
+// Switch statement 
+function days(day){
+    switch (day) {
+        case "Sunday":
+            console.log("its sunday");
+            
+            break;
+        case "Monday":
+             console.log("its monday go to office");    
+            break;
+        default:
+            console.log("No match found");
+            break;
+    }
+
+}
+
+days("Sunday");
+days("Monday");
+days("anyday");
+
+
+// Write a switcj statemnt to 
+// ### Question 1: Basic Switch Statement
+
+// **Prompt:**
+// Write a function `getDayName` that takes a number (0-6) as input and returns the corresponding day of the week as a string. Use a `switch` statement to implement this function.
+
+// 
+// for (let i=0;i<10;i++){
+//    // 
+// }
+// let i=0
+// while(i<10){
+//     // the code you want to repeat
+
+//     //
+
+//     i++
+// }
+
+
+// Lets print all odd numbers between 1-100

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // A function passed as an argument to another function is called as a callback function
+
+
+function foo(param){
+    param(9);
+
+}
+
+foo( function cb(arg){
+    console.log("hello world",arg)
+
+}   )
+
+// Print all even numbers using callback function
+
+
+function printevenNum(fn){
+    for(let i=0;i<100;i++){
+        if(i%2==0){
+            fn(i);
+        }
+    }
+
+}
+
+// printevenNum(function (param){
+//     console.log(param);
+// })
+
+
+
+function Greet(name,callback){ //parameteres
+    console.log("hello"+name);
+}
+
+function saygoodBye(){
+    console.log("good bye");
+}
+
+Greet("Shilpa",saygoodBye)
+
+
+// Calculate simple interest ,using callbacks 
+// Function Calculate simple interest ,simple interest formula should be inside callback
+// and print out the simple interest
+
+        </script>
+    
+</body>
+</html>

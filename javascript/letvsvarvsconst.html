@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 
+        let a=9;
+        var b=90;
+        const c=98;
+
+// let and var 
+// 1 - variable with let cant be re declared ,but variables with var can be redeclared
+// var i=9;
+// var i=90;
+
+// let i=9;
+// let i=8;
+
+// second difference - let is block scoped ,and var is functional scoped
+
+// scope is a area where variale is valid ,outside the scope you cannot access the variable
+// {
+
+// }
+// functional scope
+function foo(){
+
+}
+
+// block scope
+// if (){} // else {}
+ // for {} ,{}
+
+// var is functional scoped
+
+// function fo(){
+//     var o=9;
+// }
+
+
+// let is a block scoped
+
+// if(true){
+//     let g=10;
+// }
+
+// console.log(g)
+
+// console.log(o);
+
+// what if var is inside the block scope
+
+// if (true){
+//     var t=90;
+// }
+// console.log(t);
+// all the differences that are between let and var are same as const and var
+
+// const vs let
+// you cant reassign the const ,but you can re assign the let
+
+
+//
+// valid
+// let y=90;
+// y=98;
+
+// invalid
+
+// const j=0;
+// j=90;
+
+//JavaScript Hoisting refers to the process whereby the 
+//interpreter appears to move the declaration of functions, variables, 
+//classes, or imports to the top of their scope, 
+//prior to execution of the code.
+
+let k=0; // declaration ,initalization ,assignment
+
+// let k  // declaration
+// k =undefined  // initialization
+// k=0; //aassignment
+
+function fi(){
+  // var c ;
+  console.log(c);
+
+    var c=9;
+    console.log(c);
+}
+//fi();
+
+
+function f6(){
+    // let c;
+    console.log(c);
+    let c=90;
+    console.log(c);
+
+}
+
+f6();
+        </script>
+</body>
+</html>
