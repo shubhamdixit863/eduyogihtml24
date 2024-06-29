@@ -12,38 +12,57 @@
     <button id="btn">
         Click
     </button>
+
+    <p id="paragraph">
+
+    </p>
+    <div id="div">
+
+    </div>
+
+    <button id="change">
+        Change the Paragraph Contents
+
+    </button>
+
+    <button id="divbtn">
+        Change the Div Contents
+
+    </button>
     
     <script>
 
-        let btn=document.getElementById("btn");
-        let heading=document.getElementById("heading");
-        btn.addEventListener("click",function(){
-            heading.style.color="green";
+        // let btn=document.getElementById("btn");
+        // let heading=document.getElementById("heading");
+        // btn.addEventListener("click",function(){
+        //     heading.style.color="green";
 
+        // })
+
+        // How we can change text content
+
+        let btnchange=document.getElementById("change");
+        let paragraph=document.getElementById("paragraph");
+
+        btnchange.addEventListener("click",function(){
+            //console.log("btn clicked");
+            paragraph.innerText="lorem ipsum";
         })
 
-        // You have to calculate the sum and product of first 100 numbers using callback
+        let divbtn=document.getElementById("divbtn");
 
-        function Loop(sum,product){
-            let sum_=0;
-            let product_=1;
-            for(let i=1;i<200;i++)
-            {
-                sum_=sum_+i;
-                product_=product_*i;
-             
-            }
-            product(sum_);
-                sum(product_);
+        let div=document.getElementById("div");
 
-        }
-        Loop(function(sum){
-            console.log(sum);
-
-        },function(product){
-            console.log(product)
-
+        divbtn.addEventListener("click",function(){
+            //console.log("btn clicked");
+            //paragraph.innerText="lorem ipsum";
+            div.innerHTML="<h1>hello world </h1>";
+            div.style.color="gold";
         })
+
+        /// 
+
+        
     </script>
 </body>
 </html>
