@@ -120,9 +120,20 @@
 ]
 
 for (let i=0;i<arr.length;i++){
-    console.log(arr[i].name);
+   // console.log(arr[i].name);
+
+   const li=document.createElement("li");
+   li.innerText=arr[i].name;
+   list.appendChild(li)
+
 }
 
+list.addEventListener("click",function(event){
+    //console.log(event.target)
+    list.removeChild(event.target);
+
+})
+//https://github.com/shubhamdixit863/eduyogihtml24.git
     </script>
 </body>
 </html>
