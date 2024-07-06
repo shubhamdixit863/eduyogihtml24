@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input"/>
+
+    <button id="btn">
+        Add To Do
+    </button>
+
+    <ul id="list">
+
+    </ul>
+
+    <script>
+        let btn=document.getElementById("btn");
+        let input=document.getElementById("input");
+        let list=document.getElementById("list");
+        btn.addEventListener("click",function(){
+            let li=document.createElement("li");
+            let btn_delete=document.createElement("button");
+            btn_delete.addEventListener("click",function(event){
+                //console.log("delete btn clicked");
+                let element=event.target;
+                //console.log(element);
+                let closest_parent=element.closest("li");
+               // console.log(closest_parent);
+               list.removeChild(closest_parent);
+            })
+            let label=document.createElement("label");
+            label.innerText=input.value;
+            li.appendChild(label);
+            btn_delete.innerText="Delete"
+            li.appendChild(btn_delete);
+           
+            
+            //li.innerText=input.value;
+            list.appendChild(li)
+
+        })
+
+
+        // show the below data in the table dynammically
+
+        let arr=[
+  {
+    "id": 32,
+    "name": "Castro White",
+    "salary": "$37562"
+  },
+  {
+    "id": 38,
+    "name": "Sloan Mercer",
+    "salary": "$34152"
+  },
+  {
+    "id": 23,
+    "name": "Barton Dean",
+    "salary": "$29517"
+  },
+  {
+    "id": 26,
+    "name": "Florence Erickson",
+    "salary": "$32578"
+  },
+  {
+    "id": 39,
+    "name": "Georgia Pierce",
+    "salary": "$33317"
+  },
+  {
+    "id": 21,
+    "name": "Wilda Lee",
+    "salary": "$22764"
+  },
+  {
+    "id": 29,
+    "name": "Mcfarland Porter",
+    "salary": "$26850"
+  },
+  {
+    "id": 39,
+    "name": "Hartman Booth",
+    "salary": "$30806"
+  },
+  {
+    "id": 25,
+    "name": "Melton Mills",
+    "salary": "$36261"
+  },
+  {
+    "id": 32,
+    "name": "Fuller Carey",
+    "salary": "$37689"
+  },
+  {
+    "id": 40,
+    "name": "Lolita Johns",
+    "salary": "$33042"
+  },
+  {
+    "id": 27,
+    "name": "Adeline Kane",
+    "salary": "$27977"
+  },
+  {
+    "id": 21,
+    "name": "Hamilton Rogers",
+    "salary": "$23525"
+  },
+  {
+    "id": 23,
+    "name": "Harrington Puckett",
+    "salary": "$35960"
+  }
+]
+
+for (let i=0;i<arr.length;i++){
+    console.log(arr[i].name);
+}
+
+    </script>
+</body>
+</html>
